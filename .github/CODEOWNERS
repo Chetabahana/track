@@ -1,14 +1,13 @@
-# @microsoft/octo-semantickernel-pr-dotnet owns any files in the dotnet
-# directory at the root of the repository and any of its
-# subdirectories.
-/dotnet/ @microsoft/octo-semantickernel-pr-dotnet
+# Lines starting with '#' are comments.
+# Each line is a file pattern followed by one or more owners.
 
-# @microsoft/octo-semantickernel-pr-python owns any files in the python
-# directory at the root of the repository and any of its
-# subdirectories.
-/python/ @microsoft/octo-semantickernel-pr-python
+# These owners will be the default owners for everything in the repo.
+*       @eq19
 
-# @microsoft/octo-semantickernel-pr-python owns any files in the java
-# directory at the root of the repository and any of its
-# subdirectories.
-/java/ @microsoft/octo-semantickernel-pr-java
+# Order is important. The last matching pattern has the most precedence.
+# So if a pull request only touches javascript files, only these owners
+# will be requested to review.
+# *.js    @octocat @github/js
+
+# You can also use email addresses if you prefer.
+# .github/*  docs@example.com
